@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Notes CRUD Client</title>
+  <!-- <link href="js/style.css" > -->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+  <style>
+    input[type='submit'], button, [aria-label]{
+      cursor: pointer;
+    }
+    #spoiler{
+      display: none;
+    }
+    body{
+background-image: url("img1.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+    }
+    #formy {
+      position: fixed;
+      background: rgba(255, 255, 255, 0.2);
+      width: 570px;
+      height: 275px;
+      padding: 38px;
+      border: 2px solid gray;
+      margin:550px;
+      margin-top: 300px;
+
+      border-radius: 5px;
+  }
+  th{
+    background-color: skyblue;
+  }
+  </style>
+
+</head>
+<body>
+
+<div id="formy">
+<form action="javascript:void(0);" method="POST" onsubmit="addNote()">
+<b>   TITLE <b> <input type="text" id="add-title" placeholder="New Note Title" style="height:40px;width:300px"><br>
+  NOTE <input type="text" id="add-body" placeholder="New Note Body"  style="height:40px;width:300px">
+  <input type="submit" value="Add" style="color:white;border-radius:10px;background-color:black;height:40px;width:90px">
+</form>
+
+<div id="spoiler" role="aria-hidden">
+  <form action="javascript:void(0);" method="POST" onsubmit="saveEdit()">
+    <input type="text" id="edit-title">
+    <input type="text" id="edit-body">
+    <input type="submit" value="Edit" style="color:blue;border-radius:5px;background-color:yellow;height:40px;width:90px">
+  </form>
+</div>
+
+<table>
+  <tr>
+    <th style="border:2px solid grey;border-radius:10px">ID</th>
+
+    <th style="border:2px solid grey;border-radius:10px">Title</th><br>
+    <th style="border:2px solid grey;border-radius:10px">Text</th><br>
+  </tr>
+    <tbody id="notes">
+    </tbody>
+</table>
+</div>
+<!-- <script src="app/public/js/script1.js"></script> -->
+<!--<script src="js/script1.js"></script>
+<!-- <script src="app/public/js/script3.js"></script> -->
+<!-- </body>
+</html> --> -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MovieInfo</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Movie Catalog</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h3 class="text-center">Search Your Favourite Movie</h3>
+      <form id="searchForm">
+        <input type="text" class="form-control" id="searchText" placeholder="Search Movie...">
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="movies" class="row"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
